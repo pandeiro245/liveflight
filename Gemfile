@@ -17,8 +17,5 @@ group :development, :test do
   gem 'mysql2'
 end
 
-group :production do
-  gem 'pg' # for heroku
-end
 gem 'haml'
 
