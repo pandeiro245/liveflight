@@ -13,7 +13,6 @@ public/data
 .DS_Store
 coverage/
 
-Gemfile.lock
 vendor/bundle
 uploads/
 
