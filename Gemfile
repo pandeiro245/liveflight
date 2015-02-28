@@ -20,3 +20,4 @@ end
 
 gem 'haml'
 
+gem 'rails_admin'
