@@ -1,0 +1,25 @@
+!!!
+%html{"ng-app" => ""}
+  %head
+    %title LiveFlight（ライブフライト）
+    %script{:src => "//cdn.mlkcca.com/v0.2.8/milkcocoa.js"}
+    %script{:src => "//www.parsecdn.com/js/parse-1.2.18.min.js"}
+    
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+
+    %meta{:content => "LiveFlight（ライブフライト）は様々なアーティストの1分動画を見て「生演奏見てみたい」を押しておくとあなた活動地域の近くで彼らの生演奏が見られるようになるアプリです", :name => "description"}/
+    %meta{:content => "生演奏", :name => "keywords"}/
+    %link{:href => "/favicon.ico", :rel => "shortcut icon", :type => "image/x-icon"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %meta{:content => "yes", :name => "apple-mobile-web-app-capable"}/
+    %link{:href => "/icon.png", :rel => "apple-touch-icon-precomposed"}/
+    -#%meta{:content => "https://ruffnote.com/attachments/24009", :property => "og:image"}/
+  %body
+    .socialbutton
+      %a.twitter-share-button{"data-text" => "", "data-url" => "http://liveflight.net", :href => "https://twitter.com/share"} Tweet
+      :javascript
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+    = yield
+
