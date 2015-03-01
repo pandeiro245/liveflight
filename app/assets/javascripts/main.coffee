@@ -5,7 +5,7 @@ $ ->
     ruffnote(18943, 'pictures')
   
   $(document).on('click', '#want', () ->
-    alert '演奏してみたいを押すと演奏スケジュールカレンダーに遷移する予定です（開発中）'
+    alert '演奏してみたいボタンを押すと演奏スケジュールカレンダーに遷移する予定です（開発中）'
   )
 
 ruffnote = (id, dom, callback=null) ->
