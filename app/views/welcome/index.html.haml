@@ -4,5 +4,6 @@
   %h2=place.name
   %iframe{width: "560", height: "315", src: "//www.youtube.com/embed/#{place.youtube}?autoplay=0&start=#{place.start_sec || 0}", frameborder: "0"}
   %div
-    =link_to 'もっと見る', place_path(place), {class: 'btn btn-default'}
+    =link_to 'もっと見る', place_path(place), {class: 'btn btn-info'}
+    <button id='want' class='btn btn-success' style='margin-left: 20px;'>ここで演奏してみたい</button>
 #footer
