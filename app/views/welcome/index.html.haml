@@ -1,5 +1,5 @@
 #main
 %h1 現在登録されている演奏場所
 - @places.each do |place|
-  %h2=place.name
+  %h2=link_to place.name, place_path(place)
   %iframe{width: "560", height: "315", src: "//www.youtube.com/embed/#{place.youtube}?autoplay=0&start=#{place.start_sec || 0}", frameborder: "0"}
