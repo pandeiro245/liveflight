@@ -53,4 +53,11 @@ namespace :export_temple do
             sleep 1
         end
     end
+
+    desc "Download temple data"
+    task :download => :environment do
+        Place.all.each do |p|
+            puts "#{p.id},#{p.name},#{p.url}"
+        end
+    end
 end
