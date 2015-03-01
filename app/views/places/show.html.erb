@@ -1,0 +1,21 @@
+<script type="text/javascript">
+    var map;
+    $(document).ready(function(){
+      map = new GMaps({
+        div: '#map',
+        lat: -12.043333,
+        lng: -77.028333
+      });
+      console.log(map)
+    });
+</script>
+<p id="notice"><%= notice %></p>
+
+aaaaaaa
+<h1><%= @place.name %></h1>
+<div id="map"></div>
+
+<%= @place.address %>
+
+
+<%= link_to 'Back', places_path %>
