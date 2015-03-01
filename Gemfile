@@ -19,4 +19,4 @@ group :development, :test do
 end
 
 gem 'haml'
-
+gem 'rails_admin'
